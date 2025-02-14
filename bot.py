@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 current_index_state = {}
 
 # ----------------------- Константы -----------------------
-TOKEN = '8198242300:AAFMRtYqgDaZxpZq2dNz6Ol1dVlhhOP7jXY'
+TOKEN = ''
 # Старый пакет для покупки опыта (использовался ранее)
 EXP_COST = 5      # стоимость покупки опыта (SC Coin) для 10 опыта
 EXP_GAIN = 10     # сколько опыта даётся за покупку (старый вариант)
@@ -732,7 +732,7 @@ def activate_qr_code(chat_id, qr_code_id):
 
 
 # ----------------------- Команда для учителей -----------------------
-TEACHER_IDS = [6997207264, 1738405380, 6428592046, 5474674324, 5119933488]
+TEACHER_IDS = []
 @bot.message_handler(commands=['add_points'])
 def add_points(message):
     if message.from_user.id not in TEACHER_IDS:
